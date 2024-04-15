@@ -1,0 +1,3069 @@
+/*
+	Theme Name: Sevag
+	Description: Sevag's Theme
+	Version: 1.0.0
+	Author: Sevag Akelian
+	Tags: HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/***FONTS***/
+@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Bold.woff2') format('woff2'),
+        url('fonts/VisbyCF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-BoldOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+@font-face {
+    font-family: 'Visby CF Demi';
+    src: url('fonts/VisbyCF-DemiBold.woff2') format('woff2'),
+        url('fonts/VisbyCF-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-ThinOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-ThinOblique.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-ExtraBoldOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-ExtraBoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Heavy.woff2') format('woff2'),
+        url('fonts/VisbyCF-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Thin.woff2') format('woff2'),
+        url('fonts/VisbyCF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-MediumOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-LightOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Medium.woff2') format('woff2'),
+        url('fonts/VisbyCF-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-HeavyOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-HeavyOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+/*@font-face {
+    font-family: 'Visby CF Demi Bold Oblique';
+    src: url('fonts/VisbyCF-DemiBoldOblique.woff2') format('woff2'),
+        url('fonts/VisbyCF-DemiBoldOblique.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+@font-face {
+    font-family: 'Visby CF Extra';
+    src: url('fonts/VisbyCF-ExtraBold.woff2') format('woff2'),
+        url('fonts/VisbyCF-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Light.woff2') format('woff2'),
+        url('fonts/VisbyCF-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+
+
+/***VARIABLES***/
+:root {
+  --mp-white: #ffffff;
+  --mp-black: #000000;
+  --mp-blue: #1EAAE6;
+  --mp-darkblue: #071929;
+}
+
+
+/***GENERAL***/
+html{
+  scroll-behavior: auto !important;
+}
+body{
+  font-family: 'Visby CF';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  color:var(--mp-black);
+  padding-top:105px;
+  position: relative;
+  overflow-x: hidden !important;
+}
+#wrapper{
+  position: relative;
+  z-index: 1;
+  background-color: var(--mp-white);
+  padding-top:1px;
+}
+.wrapper{
+  position: relative;
+
+}
+
+a{
+  color:var(--mp-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  color: var(--mp-black);
+}
+
+p,li{
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+h1{
+  margin-bottom:2.5rem;
+}
+h2{
+  margin-bottom:2.5rem;
+}
+
+h3{
+  margin-bottom:2.5rem;
+}
+
+h4{
+  font-weight: bold;
+}
+ol, ul {
+  margin:0;
+  padding: 0;
+  list-style-position: inside;
+}
+ol > li::marker {
+  font-weight: bold;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1.page-title{
+  font-size:5rem;
+  line-height: 4.625rem;
+  font-family: 'Visby CF Extra';
+  text-align: center;
+}
+
+h2.page-subtitle{
+  font-weight: 500;
+  font-size:1.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+h2.section-subtitle{
+  font-size:3.75rem;
+  line-height: 4.5rem;
+  font-family: "Visby CF Extra";
+}
+
+a.mp-button{
+  color:var(--mp-white);
+  font-size:1rem;
+  font-family: 'Visby CF Extra';
+  text-align: center;
+  background-color:var(--mp-blue);
+  border-radius:24px;
+  padding:15px 30px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  display:inline-block;
+  line-height: 1.188rem;
+}
+.dark-bg a.mp-button:hover, .dark-bg input[type="submit"]:hover{
+  color:var(--mp-black) !important;
+  background-color:var(--mp-white) !important;
+}
+a.mp-link{
+  color:var(--mp-blue);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.1s linear;
+}
+
+a.mp-link svg{
+  margin-left:5px;
+  margin-top:-5px;
+  transition: all 0.1s linear;
+}
+a.mp-link svg use{
+  transition: all 0.1s linear;
+  fill: var(--mp-blue);
+}
+a.mp-link:hover svg use{
+  fill:var(--mp-black);
+
+}
+
+a.mp-link:hover{
+  color:var(--mp-black);
+}
+
+a.mp-button:hover{
+  background-color:var(--mp-black);
+}
+
+a.mp-button.mp-button-center{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.banner{
+  width:100%;
+  position: relative;
+  height: calc(100vh - 105px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-video{
+	object-fit: cover;
+  width: 100vw;
+  height: calc(100vh - 105px);
+  position: absolute;
+  top: 0;
+  left: 0;
+	z-index: -1;
+  border-bottom-right-radius: 46vw;
+}
+.banner-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-right-radius: 50vw;
+  z-index: -1;
+  background-position: center;
+  animation: zoom 30s infinite;
+  -webkit-animation: zoom 30s infinite;
+}
+
+.s-arrows{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  font-size:22px;
+  color:#000000;
+}
+
+.s-arrows:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.s-arrows.left-arrow{
+  left:-32px;
+}
+
+.s-arrows.right-arrow{
+  right: -32px;
+}
+
+@keyframes zoom {
+    0% {
+      background-size: 100%;
+    }
+
+    50% {
+
+        background-size: 150%;
+    }
+
+    100% {
+
+      background-size: 100%;
+    }
+
+}
+.grey-color{
+  color:#cccccc;
+}
+
+.mp-form{
+  /* margin:50px 0; */
+  position: relative;
+  z-index: 2;
+}
+.mp-career-image{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:0;
+  width:32%;
+  margin:50px 0;
+}
+.mp-partners-image{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:0;
+  width:32%;
+  margin:50px 0;
+}
+/* .careers{
+  margin-top:50px;
+  margin-bottom:50px;
+} */
+
+.career{
+  min-height:520px; /* 530px */ 
+  border:1px solid #d2d2d2;
+  position: relative;
+  border-radius: 16px;
+  margin:0 7.5px;/* 15px */ 
+  padding:35px;
+  position: relative;
+  overflow-y: hidden;
+  transition: all 0.2s linear;
+
+}
+.careers .slick-list{
+  margin:0 -15px;
+}
+.career-icon{
+  width:106px;
+  position: relative;
+  height:106px;
+  border-radius:50%;
+  background-color:rgba(248,248,248,0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.career-location{
+  position:absolute;
+  top:0%;
+  /* transform: translateY(-50%); */
+  right:5px;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  border:2px solid #ffffff
+  /* background-color: red; */
+}
+.career-description h3{
+  font-size:2.5rem;
+  line-height:3rem;
+  font-family: "Visby CF Extra";
+}
+.career-text{
+  display: none;
+  max-height:220px;
+  color:var(--mp-white);
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  /* top:0; */
+  transition: all 0.2s linear;
+  opacity: 0;
+  transform: translateY(30px);
+  margin-top: 35px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.career-text::-webkit-scrollbar {
+  display: none;
+}
+.career-description{
+  position: relative;
+  margin-top:35px;
+}
+/* .career-description .test{
+  color:var(--mp-white);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  width:100%;
+  transition: all 0.2s linear;
+  opacity: 0;
+  transform: translateY(30px);
+} */
+
+.career:hover{
+  background-color:var(--mp-darkblue);
+}
+.career-link{
+  position:absolute;
+  bottom:30px;
+}
+.career:hover .career-text{
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+  overflow-y: scroll;
+}
+
+.career:hover .career-description{
+  display: none;
+
+}
+.career:hover .career-description h3{
+  opacity: 0;
+}
+
+.career:hover .career-icon{
+  background-color:rgba(255,255,255,1);
+}
+
+
+.flag-container{
+    margin-left:10px;
+}
+
+.flag-dropdown{
+  margin-left:10px;
+}
+
+.country-select input{
+  padding-left:63px !important;
+}
+
+.intl-tel-input input{
+  padding-left:63px !important;
+}
+
+.mp-form br{
+  display: none;
+}
+
+.mp-form .mp-file-label{
+  display:block;
+  width:100%;
+  text-align: center;
+  border-radius: 24px;
+  background-color:#f9fafb;
+  font-family: "Visby CF Extra";
+  font-size: 1rem;
+  transition: all 0.1s linear;
+  padding: 13px 7px;
+  margin-bottom: 5px;
+}
+
+.mp-form .mp-file-label:hover{
+  background-color: var(--mp-black);
+  color: var(--mp-white);
+  cursor: pointer;
+}
+
+.dropdown-menu input{
+  color:var(--black) !important;
+}
+
+
+.mp-form .wpcf7 form.invalid .wpcf7-response-output,
+.mp-form .wpcf7 form.unaccepted .wpcf7-response-output,
+.mp-form .wpcf7 form.payment-required .wpcf7-response-output,
+.mp-form .wpcf7 form.failed .wpcf7-response-output,
+.mp-form .wpcf7 form.aborted .wpcf7-response-output{
+  background-color: var(--bs-danger);
+  border:none;
+  padding:10px 10px;
+  color:var(--mp-white);
+  margin-left:0;
+  border-radius: 6px;
+}
+
+
+
+.mp-form .wpcf7 form.sent .wpcf7-response-output{
+  background-color: var(--mp-darkblue);
+  border:none;
+  padding:10px 10px;
+  color:var(--mp-white);
+  margin-left:0;
+  border-radius: 6px;
+}
+
+.mp-form input:not([type='submit']), .mp-form textarea, .mp-form select{
+  width:100%;
+  border-radius: 24px;
+  border:1px solid rgba(0,0,0,0.11);
+  background-color: #f9fafb;
+  transition: all 0.1s linear;
+  padding:13px 15px;
+  margin-bottom:5px;
+  min-height: 47px;
+  color:var(--mp-black);
+}
+
+.wpforms-field input:not([type='submit']), .wpforms-field select, .wpforms-field textarea{
+  width:100%;
+  border-radius: 24px !important;
+  border:1px solid rgba(0,0,0,0.11) !important;
+  background-color: #f9fafb !important;
+  transition: all 0.1s linear !important;
+  padding:13px 15px !important;
+  margin-bottom:5px !important;
+  min-height: 47px !important;
+  color:var(--mp-black) !important;
+}
+
+.wpforms-field input:not([type='submit']).wpforms-smart-phone-field{
+  padding-left:63px !important;
+}
+
+@media only screen and (max-width: 600px){
+  div.wpforms-container-full .wpforms-form .wpforms-page-indicator.circles .wpforms-page-indicator-page {
+    margin: 5px 10px 5px 0 !important;
+  }
+}
+
+div.wpforms-container-full .wpforms-form input[type=checkbox], div.wpforms-container-full .wpforms-form input[type=radio]{
+  vertical-align: middle !important;
+}
+div.wpforms-container-full .wpforms-form .wpforms-page-indicator.circles .wpforms-page-indicator-page{
+  margin: 0 30px 0 0 !important;
+}
+.wpforms-page-indicator.circles{
+  position: sticky !important;
+  top: 0 !important;
+  background: white !important;
+  z-index: 9 !important;
+}
+.wpforms-field-divider{
+  margin-top:30px !important;
+  margin-bottom:20px !important;
+  padding-top:30px !important;
+  padding-bottom:20px !important;
+  border-bottom: 1px solid #dfdfdf !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-page-indicator.circles .wpforms-page-indicator-page:not(.active) .wpforms-page-indicator-page-number{
+  background-color: #f9fafb !important;
+}
+div.wpforms-container-full .wpforms-form .wpforms-page-indicator.circles .wpforms-page-indicator-page.active .wpforms-page-indicator-page-title{
+  color: var(--mp-blue) !important;
+}
+.wpforms-page-prev{
+  background-color:unset !important;
+  border: 1px solid var(--mp-blue) !important;
+  color: var(--mp-blue) !important;
+}
+.wpforms-field-description{
+  margin-bottom:10px !important;
+}
+.wpforms-field-divider h3{
+  color:var(--mp-black) !important;
+}
+#precheck-application h2{
+  margin-bottom:4rem;
+} 
+.mp-form textarea{
+  border-radius: 10px;
+}
+
+.bootstrap-select{
+  display:block;
+  width: 100% !important;
+}
+
+.bootstrap-select button{
+  border-radius: 24px;
+  border:1px solid rgba(0,0,0,0.11);
+  transition: all 0.1s linear;
+  padding:13px 15px;
+  margin-bottom:5px;
+  min-height: 47px;
+  color:var(--mp-black);
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-check:focus+.btn-light, .btn-light:focus{
+  outline: none !important;
+}
+
+input[type=search]{
+  border-radius: 0 !important;
+  padding:7px !important;
+  min-height: auto !important;
+}
+
+input[type=search]:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mp-form.dark-form select option{
+  background-color:rgba(255,255,255,0.1);
+  color:var(--mp-black);
+}
+
+.mp-form.dark-form input:not([type='submit']), .mp-form.dark-form textarea, .mp-form.dark-form select{
+  background-color:rgba(255,255,255,0.1);
+  color:var(--mp-white);
+}
+
+.btn-light:hover{
+  border-color: transparent;
+}
+.btn-check:focus+.btn-light, .btn-light:focus{
+  outline:none;
+  border-color:transparent;
+}
+
+.mp-form.dark-form .bootstrap-select>.dropdown-toggle{
+  background-color:rgba(255,255,255,0.1) !important;
+  color:var(--mp-white) !important;
+}
+
+.big-input .bootstrap-select>.dropdown-toggle{
+  border:1px solid var(--mp-white);
+  padding:17px;
+  font-weight: 500;
+  font-size:1.5rem;
+  border-radius: 32px;
+}
+
+.mp-form input[type='submit']{
+  border-radius: 32px;
+  background-color: var(--mp-blue);
+  color:var(--mp-white);
+  padding:15px 70px;
+  text-align: center;
+  font-family: "Visby CF Extra";
+  border: none;
+  transition: all 0.1s linear;
+}
+
+.wpforms-page-button{
+  border-radius: 32px !important;
+  background-color: var(--mp-blue) !important;
+  color:var(--mp-white) !important;
+  padding:15px 30px !important;
+  text-align: center !important;
+  font-family: "Visby CF Extra" !important;
+  border: none !important;
+  transition: all 0.1s linear !important;
+}
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit]{
+  border-radius: 32px !important;
+  background-color: var(--mp-blue) !important;
+  color: var(--mp-white) !important;
+  padding: 15px 30px !important;
+  text-align: center !important;
+  font-family: "Visby CF Extra" !important;
+  border: none !important;
+  margin:0 auto;
+  display: block;
+  transition: all 0.1s linear !important;
+}
+.mp-form input[type='submit']:hover{
+  background-color:var(--mp-black);
+}
+
+.mp-form textarea{
+  resize: none;
+  height: 131px;
+}
+
+.mp-form input:not([type='submit']):focus, .mp-form textarea:focus, .mp-form select{
+  border:1px solid rgba(0,0,0,0.11);
+  outline: none;
+}
+
+.mp-form input:not([type='submit']){
+  width:100%;
+}
+
+.mp-form label{
+  font-weight: bold;
+  margin-bottom:15px;
+  margin-left:2px;
+}
+
+.mp-form.dark-form label{
+  color:var(--mp-white);
+}
+
+.mp-form input[type='file']{
+  display:none;
+}
+
+.mp-form .input-wrapper{
+  margin-bottom:20px;
+}
+
+.mp-form .submit-wrapper{
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  padding-top:30px;
+}
+.mp-form .submit-wrapper.center-button{
+  display: flex;
+  justify-content: center;
+}
+
+.mp-form .submit-wrapper .wpcf7-spinner{
+  margin-left:17px;
+  margin-top:-1px;
+  position: absolute;
+  right: -65px;
+}
+
+
+.form-select:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.separator{
+  /* margin:50px 0; */
+}
+
+.input-wrapper p{
+  display: none;
+}
+
+
+section.section{
+  margin:100px 0;
+  padding:50px 0;
+  position: relative;
+}
+
+section.section.with-bg{
+  padding:100px 0;
+}
+
+section.section.no-margin:not(:nth-child(1)){
+  margin-top:100px;
+  padding-top:50px;
+}
+section.section.no-margin{
+  margin:0;
+  /* padding:105px 0; 100px */
+}
+
+section.section.feature:nth-child(1):nth-child(odd){
+  margin-top:100px;
+}
+
+section.section.less-spacing{
+  margin:30px 0;
+  padding:30px 0;
+}
+
+.section-image{
+  background-repeat: no-repeat;
+  height:100%;
+  width:50%;
+  position: absolute;
+  right:0;
+  top:0;
+  background-size:cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.section-image.left-image{
+  left:0;
+}
+
+.border-bottom-left-radius{
+  border-bottom-left-radius: 21vw;
+}
+
+.border-top-right-radius{
+  border-top-right-radius: 21vw;
+}
+
+.border-top-right-radius-slight{
+  border-top-right-radius: 170px;
+}
+
+.section-content{
+  position: relative;
+}
+.section-content h4{
+  font-family: "Visby CF Extra";
+  font-size:1.375rem;
+  line-height: 2rem;
+}
+
+.section-content h3{
+  font-size:0.938rem;
+  line-height: 1.125rem;
+  color:var(--mp-blue);
+  letter-spacing: 8px;
+  font-family: "Visby CF Extra";
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.section-content h2{
+  font-size: 3.75rem;
+  line-height: 4rem;
+  font-family: "Visby CF Extra";
+}
+.section-content h2 span{
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: "Visby CF";
+}
+.section-content p{
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.dark-bg .section-content h2, .dark-bg p{
+  color:var(--mp-white);
+}
+
+.search-icon{
+  margin-right:10px;
+}
+
+.search-icon:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.gradient-bg{
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #ECF0F7 100%);
+
+}
+.dark-bg{
+  background-color:var(--mp-darkblue);
+}
+.bg-border-radius{
+  border-top-right-radius: 400px;
+}
+
+#testimonials{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.testimonial{
+  background-color:var(--mp-white);
+  border-radius: 24px;
+  padding:30px;
+  width:50%;
+  margin:0 15px;
+  text-align: left;
+}
+
+.tdescription{
+  min-height:180px;
+}
+
+.tmeta{
+  display: flex;
+  align-items: center;
+}
+.tmeta img{
+  margin-right:15px;
+}
+.tmeta h4{
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+  margin-bottom:5px;
+}
+.tmeta h5{
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.slick-dots li button:before{
+  font-size:13px;
+  color:#606C84;
+  opacity: 0.2;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before{
+  color:var(--mp-blue);
+  opacity: 0.4;
+}
+.slick-dots li.slick-active button:before{
+  color:var(--mp-blue);
+  opacity: 1;
+}
+.slick-track{
+  margin-left:0;
+}
+.item-icon{
+  background-color:rgba(30,170,230,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:380px;
+  width:380px;
+  border-radius: 50%;
+}
+
+.item-icon .feature-image{
+  width: auto;
+}
+
+.ecommerce-plugins{
+  padding:5vh 0;
+}
+
+.ecommerce-plugin{
+  width:100%;
+  border:1px solid #dddddd;
+  border-radius:14px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  margin-bottom:calc(var(--bs-gutter-x));;
+  position: relative;
+  overflow: hidden;
+}
+
+.ecommerce-plugin a{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+
+}
+
+.hover-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mp-darkblue);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: bold;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+.hover-overlay span{
+  transform: translateY(-100%);
+  transition: all 0.1s linear;
+  opacity: 0;
+}
+
+
+
+
+.ecommerce-plugin a:hover{
+  color:var(--mp-blue);
+}
+
+.ecommerce-plugin a:hover .hover-overlay{
+  opacity:1;
+}
+
+.ecommerce-plugin a:hover .hover-overlay span{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hover-overlay:hover{
+  color:var(--mp-blue);
+}
+
+.hover-overlay svg{
+  margin-right:8px;
+}
+
+.api-item{
+  text-align: center;
+  padding:80px;
+  margin-bottom:60px;
+  border-radius: 10px 100px 10px 10px;
+  border:1px solid #dfdfdf;
+}
+
+.api-links{
+  padding:15px 0 0 0;
+}
+
+.api-links a{
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.api-links svg{
+  margin-left:5px;
+  margin-bottom: 4px;
+
+}
+.api-links svg use{
+  fill: var(--mp-blue);
+    transition: all 0.1s linear;
+}
+
+.api-links a:hover svg use{
+  fill: var(--mp-black);
+}
+
+/***PAGE BANNER***/
+section.banner-section{
+  position:relative;
+  margin-top:0;
+  padding:8vh 0; /* padding-top:100px % */
+
+}
+
+section.banner-section::before{
+  content: " ";
+  position: absolute;
+  width:100%;
+  height:100%; /* 65% */
+  top:0;
+  /* background-color:#ECF0F7; */
+  background: linear-gradient(180deg,rgba(255,255,255,0) 0%,#ecf0f7 100%);
+  z-index: -1;
+}
+
+.page-image{
+  border-top-right-radius: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:45vh;
+  margin-top:2.5rem;
+}
+
+.banner-content{
+  text-align: center;
+}
+.banner-content h1{
+  font-size: 5rem;
+  font-family: "Visby CF Extra";
+  line-height:4.625rem;
+}
+
+.breadcrumbs a{
+  font-size:0.938rem;
+  letter-spacing: 8px;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  color:var(--mp-black);
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.breadcrumbs{
+  /* margin-bottom: 2.5rem;  */
+}
+
+.breadcrumbs a:hover{
+  color: var(--mp-blue);
+}
+
+#why-montypay{
+  width:100%;
+}
+
+#why-montypay .sections{
+  position: relative;
+  /* margin-top:50px;
+  margin-bottom: 50px; */
+}
+
+body.why-montypay section.feature{
+  height:calc(100vh - 105px);
+}
+
+.sections{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+
+.feature{
+  display: flex;
+  width: 100%;
+}
+
+.sticky-wrapper{
+  position: sticky;
+  top:105px;
+}
+.sticky-wrappper-top{
+  /* top:160px; */
+  top: calc(50% - 55px);
+  transform: translateY(calc(-50% + 105px))
+}
+
+.feature-section{
+  display: none;
+  width:50%;
+  margin-top: 120px;
+  padding-right:80px;
+}
+
+
+.feature-picture{
+  visibility: hidden;
+}
+
+.feature-media{
+  display: none;
+  width:50%;
+  height: 100vh;
+  margin-left: auto;
+}
+
+.feature-media img{
+  width: 100%;
+  max-width: none;
+  height: calc(100vh - 105px);
+  object-fit: cover;
+}
+
+.s-arrows.left-arrow-why-montypay, .s-arrows.left-arrow-montypay-features{
+  top:-20px;
+  right:15%;
+  z-index:3;
+  color:#e5e5e5;
+}
+.s-arrows.right-arrow-why-montypay, .s-arrows.right-arrow-montypay-features{
+  top:-20px;
+  right: 5%;
+  z-index:3;
+  color:#e5e5e5;
+}
+
+.feature-two-section,.feature-two-number,.feature-two-media{
+  display: none;
+}
+
+.mactive{
+  display: block;
+}
+
+.sactive{
+  display: block;
+  -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0;  transform:translateX(-50px);
+ }
+      to { opacity: 1;  transform:translateX(0);
+ }
+}
+@keyframes fadeIn {
+    from { opacity: 0;   transform:translateX(-50px);}
+      to { opacity: 1;  transform:translateX(0);}
+}
+
+.feature-two-section.mactive{
+  -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+    animation-timing-function: ease-in;
+}
+
+.feature-two-number.mactive{
+  -webkit-animation: fadeInDown 0.4s;
+    animation: fadeInDown 0.4s;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fadeInDown {
+    from { opacity: 0;  transform:translateY(-20px);
+ }
+      to { opacity: 0.1;  transform:translateY(0);
+ }
+}
+@keyframes fadeInDown {
+    from { opacity: 0;   transform:translateY(-20px);}
+      to { opacity: 0.1;  transform:translateY(0);}
+}
+
+@-webkit-keyframes fadeInLeft {
+    from { opacity: 0;  transform:translateX(50px);
+ }
+      to { opacity: 1;  transform:translateX(0);
+ }
+}
+@keyframes fadeInLeft {
+    from { opacity: 0;   transform:translateX(50px);}
+      to { opacity: 1;  transform:translateX(0);}
+}
+
+.feature h5{
+  font-size: 4.375rem;
+  line-height: 5.25rem;
+  color:rgba(0,0,0,0.1);
+  font-family: "Visby CF Extra";
+  margin:40px 0 0 0;
+}
+
+.feature-scroller,.feature-two-scroller{
+  width:100%;
+  height: calc(100vh - 105px);
+  margin-top:105px;
+}
+
+.feature-scroller:last-child,.feature-two-scroller:last-child{
+  height:120vh;
+}
+
+.feature-image{
+  width:100%;
+}
+
+.feature li{
+  font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.special-list{
+  display: flex;
+  align-items: center;
+}
+
+.special-list span{
+  font-size: 5.625rem;
+  line-height: 6.75rem;
+  font-family: "Visby CF Extra";
+  color:rgba(0,0,0,0.1);
+  margin-right:15px;
+  width: 50px;
+  text-align: center;
+}
+
+.special-list p{
+  font-weight: bold;
+  margin:0;
+  line-height: 1.75rem;
+}
+
+#all-features section.feature:last-child{
+  margin-bottom:0;
+  padding-bottom:100px;
+
+}
+
+.icon-bg{
+  width:45px;
+  height:45px;
+  background-color:#f3f3f3;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /*margin-bottom:10px;
+  margin-top:10px;  15px */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.icon-text h4{
+  font-size: 1.25rem;
+line-height: 2rem;
+}
+.icon-title{
+  display:flex;
+  align-items: center;
+  margin-bottom:10px;
+  margin-top:10px; 
+}
+.icon-title h4{
+  margin-bottom:0;
+}
+body.features .newsletter-section{
+  margin-top:0;
+  position:relative;
+}
+
+/*body.features .newsletter-section::before{
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #ECF0F7 100%);
+}*/
+
+section.section.newsletter-section{
+  margin-bottom: 0;
+}
+
+section.section.footer-section{
+  padding:50px 0 20px;
+  margin: 0;
+}
+
+.fixed-footer{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  z-index: 0;
+  background-color: var(--mp-white);
+}
+
+/***HEADER***/
+header{
+	width:100%;
+	background-color:var(--mp-white);
+	box-shadow: 0 2px 4px 0 rgba(0,0,12,0.12);
+	transition: all 0.2s linear;
+  /* padding-top:20px; */
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+  transition: all 0.1s linear;
+}
+
+header.sticky{
+  padding-top:0;
+}
+
+header.sticky .logo{
+  margin-top:0;
+}
+
+header.sticky nav > ul > li > a{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+header > .container{
+}
+
+.logo{
+  transition: all 0.1s linear;
+  width: 130px;
+  /* margin-top:-35px; */
+}
+
+.header-content{
+	display: flex;
+	justify-content: space-between;
+	height:100%;
+  align-items: center;
+}
+
+.header-content a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--mp-black);
+}
+
+.header-content a:hover{
+  color: var(--mp-blue);
+  text-decoration: none;
+}
+
+.right-info a{
+  font-size:1rem;
+  line-height: 1.188rem;
+}
+
+.right-info a.blue{
+  color:var(--mp-blue);
+}
+
+.right-info a.blue:hover{
+  color: var(--mp-black);
+}
+
+nav ul{
+	list-style-type: none;
+	margin:0;
+  padding:0;
+}
+
+nav a{
+  line-height: 1.313rem;
+}
+
+/***FIRST LEVEL***/
+
+nav > ul {
+  /*position: relative;*/
+}
+
+nav > ul > li {
+  position: relative;
+  display:inline-block;
+
+}
+
+nav > ul > li > a{
+  font-size:1.125rem;
+  padding:40px 15px;
+  display: inline-block;
+  border:2px solid transparent;
+}
+
+nav > ul > li > a:hover{
+  border-bottom:2px solid var(--mp-blue);
+}
+
+/***SECOND LEVEL***/
+
+nav > ul > li > ul{
+  display:block;
+  position: absolute;
+  transition: opacity 0.2s linear;
+  background-color:var(--mp-white);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.18);
+  opacity:0;
+  top:100%;
+  padding:20px 0;
+  transform-origin: 0 0;
+  transform: translateY(-20px);
+  transition: transform 0.2s linear;
+  visibility:hidden;
+}
+
+nav ul.sub-menu li a, .footer-links ul.sub-menu li a{
+  font-size:1rem;
+  font-weight: 500;
+  display:block;
+  white-space: nowrap;
+}
+nav ul.sub-menu li a{
+  padding:7px 30px;
+
+}
+nav ul.sub-menu img{
+  max-width: none;
+}
+
+nav > ul > li:hover > ul{
+  opacity:1;
+  transform: translateY(0);
+}
+
+nav > ul > li:hover > ul{
+  transform:translateY(0);
+  visibility: visible;
+  transition: transform 0.2s linear;
+}
+nav > ul > li.mega-menu:hover > ul{
+  transform:translateY(0) translateX(-50%);
+}
+/***THIRD LEVEL***/
+nav ul.sub-menu li.menu-item-has-children > a, .footer-links > ul > li > a{
+  font-weight: bold;
+  font-size:1.125rem;
+  line-height: 1.5rem;
+  font-family: 'Visby CF Extra';
+}
+
+li.mega-menu{
+  position: static;
+
+}
+
+li.mega-menu > ul {
+  display: flex;
+  left:50%;
+  transform:translateY(-20px) translateX(-50%);
+
+}
+
+.number{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.number-icon{
+  width:106px;
+  height:106px;
+  background-color:rgba(248,248,248,0.78);
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:15px;
+}
+
+.num{
+  margin-bottom: 60px;
+}
+.num span{
+  font-size: 6.875rem;
+  line-height: 8.25rem;
+  font-weight: 900;
+}
+
+.number h4{
+  font-family: 'Visby CF Extra';
+  letter-spacing: 2.1px;
+  font-size:1rem;
+  line-height: 1.188rem;
+}
+
+.feature-number{
+  color:var(--mp-blue);
+  opacity:0.1;
+  font-weight: 900;
+  font-size:15.625rem;
+  line-height: 18.75rem;
+}
+
+.integration-plugins{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top:30px;
+}
+
+.iplugin{
+  width:33.33%;
+  margin:40px 0;
+}
+
+
+.social-icons{
+  margin-top:30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  color: var(--mp-white);
+  transition: all 0.1s linear;
+  margin:0 14px;
+  font-size:22px;
+}
+
+.social-icons a.icon-twitter:hover { color: #00aced; color: rgb(0, 172, 237); }
+.social-icons a.icon-facebook:hover { color: #3b5998; color: rgb(59, 89, 152); }
+.social-icons a.icon-linkedin:hover { color: #007bb6; color: rgb(0, 123, 182); }
+.social-icons a.icon-youtube:hover { color: #bb0000; color: rgb(187, 0, 0); }
+.social-icons a.icon-instagram:hover { color: #bc2a8d; color: rgb(188, 42, 141); }
+
+.newsletter-section{
+  color:var(--mp-white);
+}
+
+.newsletter-section .section-content h2{
+  font-size:2.625rem;
+  line-height:4rem;
+}
+
+.newsletter-section .section-content h3{
+  color:var(--mp-white);
+}
+
+.newsletter-form{
+  position: relative;
+}
+
+.newsletter-form input:focus{
+  outline: none;
+}
+
+.newsletter-form input:not([type='submit']){
+  background-color:#f9fafb;
+  border-radius: 25px;
+  padding:16px 22px;
+  width:100%;
+  border:none;
+  padding-right:150px;
+}
+
+.newsletter-form input[type='submit']{
+  background-color:var(--mp-blue);
+  border:none;
+  padding:14px 27px;
+  color:var(--mp-white);
+  font-family: "Visby CF Extra";
+  font-size:1rem;
+  line-height:1.188rem;
+  border-radius: 24px;
+  transition: all 0.1s linear;
+}
+
+.newsletter-form input[type='submit']:hover{
+  background-color: var(--mp-black);
+}
+.newsletter-input-content{
+  position: relative;
+  margin:15px 40px 40px 40px;
+}
+.newsletter-input-content input[type='submit']{
+  position:absolute;
+  right:2px;
+  top:2px;
+}
+
+.newsletter-input-content .wpcf7-spinner{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  margin:0 10px;
+}
+
+.newsletter-input-content .wpcf7-not-valid-tip{
+  margin-top:5px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.newsletter-form .wpcf7 form .wpcf7-response-output {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.footer-links ul{
+  padding:0;
+  list-style-type: none;
+}
+
+.footer-links ul a{
+  text-decoration: none;
+  color: var(--mp-black);
+}
+
+.footer-links ul a:hover {
+    color: var(--mp-blue);
+    text-decoration: none;
+}
+
+.footer-links > ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer-links > ul > li > a{
+  margin-bottom:15px;
+  font-size:1.25rem;
+  display: block;
+}
+
+.footer-links ul.sub-menu li a{
+  padding-left:0;
+  padding-right:0;
+}
+
+.footer-bottom{
+  padding:30px 0;
+  border-top:1px solid #d7d7d7;
+  text-align: center;
+}
+
+.footer-bottom a{
+  font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    color:var(--mp-black);
+}
+
+.footer-bottom a:hover{
+  color:var(--mp-blue);
+}
+
+.montypay-items{
+  /* padding:105px 0 8vh 0; 100px */
+}
+
+.montypay-items .feature li{
+  margin-bottom:15px;
+}
+
+.accordion-item{
+  border: none;
+  background-color: transparent;
+}
+
+.faq-section .accordion-item{
+  border-bottom:1px solid #d7d7d7;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed){
+  background:none;
+  color:var(--mp-black);
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button{
+  font-size:1.25rem;
+  font-family: "Visby CF Extra";
+  line-height: 2rem;
+  box-shadow: none !important;
+  padding:15px 0;
+  background-color: transparent;
+}
+
+.faq-section .accordion-button{
+  padding:30px 0;
+  /* font-size: 1.375rem; */
+}
+
+
+
+.accordion-body{
+  padding:0;
+}
+
+.faq-section{
+  /* padding:40px 0; */
+}
+
+.faq-section:first-child{
+  padding-top:0;
+}
+
+.services{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.service{
+  min-height:450px; /* 530px */ 
+  border:1px solid #d2d2d2;
+  position: relative;
+  border-radius: 16px;
+  margin:0 7.5px;/* 15px */ 
+  padding:35px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.services .slick-list{
+  margin:0 -15px;
+}
+
+.service-icon{
+  width:106px;
+  height:106px;
+  border-radius:50%;
+  background-color:rgba(248,248,248,0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-description h3{
+  font-size:2.5rem;
+  line-height:3rem;
+  font-family: "Visby CF Extra";
+}
+
+.service-description{
+  position: relative;
+  margin-top:35px;
+}
+.service-description span{
+  color:var(--mp-white);
+  position: absolute;
+  top:0;
+  width:100%;
+  transition: all 0.2s linear;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.service:hover{
+  background-color:var(--mp-darkblue);
+}
+
+.service:hover .service-description span{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service:hover .service-description h3{
+  opacity: 0;
+}
+
+.service:hover .service-icon{
+  background-color:rgba(255,255,255,1);
+}
+section.section.about-us-section-3{
+  margin-bottom:100px;
+}
+
+.post{
+  margin-bottom:80px;
+}
+.post-content h2,.post-content h1{
+  font-size:3rem;
+  line-height:3.5rem;
+  font-family: "Visby CF Extra";
+}
+
+
+.post-content h2 a{
+  color:var(--mp-black);
+}
+
+.post-content h2 a:hover{
+  color:var(--mp-blue);
+}
+
+.post-info{
+  display: flex;
+  align-items: center;
+  margin-bottom:30px;
+}
+
+.author-image{
+  border-radius: 50%;
+  margin-right:15px;
+}
+
+
+.post-info div,.post-date{
+  font-size:1.25rem;
+  line-height: normal;
+}
+
+.post-date{
+  margin-bottom:15px;
+}
+
+.author-name{
+  font-family: "Visby CF Extra";
+}
+
+a.read-more.why-montypay{
+  position: absolute;
+  top:60%;
+}
+/* 
+a.read-more.features{
+  position: absolute;
+  top:130%;
+} */
+a.read-more{
+  font-weight: bold;
+  font-size: 1.25rem;
+
+}
+a.read-more svg{
+  margin-top:-3px;
+  margin-left:-2px;
+  transition: all 0.1s linear;
+}
+a.read-more svg path{
+  transition: all 0.1s linear;
+}
+a.read-more:hover svg path{
+  stroke:var(--mp-black);
+}
+
+a.read-more:hover svg{
+  margin-left:1px;
+}
+
+.post-thumbnail{
+  max-width: 100%;
+}
+
+.mp-pagination{width:100%;text-align:center;padding:50px 0;}
+.page-numbers{min-width: 20px;text-align:center;padding:7px 10px;border:1px solid var(--mp-black);margin-left:2px;margin-right:2px;transition: all .2s ease-in;-webkit-transition: all .2s ease-in;color:var(--mp-black);font-size:1rem;border-radius: 5px;display: inline-block;min-width: 30px;}
+.mp-pagination .page-numbers:hover, .mp-pagination .current{background-color:var(--mp-black);color:#ffffff;}
+.page-numbers i{font-size:13px;}
+
+
+a.back-to{
+  font-family: "Visby CF Extra";
+  font-size:0.938rem;
+  letter-spacing: 8px;
+}
+
+a.back-to svg, a.back-to path{
+  transition: all 0.1s linear;
+}
+
+a.back-to:hover svg{
+  transform:translateX(-4px);
+}
+
+a.back-to:hover path{
+  fill: var(--mp-black);
+}
+
+.post-image img{
+  width: 100%;
+}
+
+.post-section{
+  margin-bottom:10vh;
+}
+
+.reward{
+  text-align: center;
+}
+
+.rewards{
+  margin:70px 0;
+}
+
+.ricon{
+  width:106px;
+  height:106px;
+  border-radius: 50%;
+  background-color:#f8f8f8;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:15px;
+}
+
+.rdescription p{
+  font-size:1.25rem;
+  line-height: 1.5rem;
+  padding:0 30px;
+  opacity:0.7;
+}
+
+.rewards-section{
+  margin:50px 0;
+}
+
+.rewards-section h3{
+  font-size:1.625rem;
+  line-height: 2rem;
+  font-weight: 900;
+  opacity:0.7;
+}
+
+.partner-items{
+  margin-top:70px;
+}
+
+
+.ptypes{
+  margin:100px 0;
+}
+
+.ptypes a{
+  color:var(--mp-black);
+}
+
+.ptype{
+  background-color:var(--mp-white);
+  border-radius: 20px;
+  padding:50px;
+  transition: all 0.1s linear;
+  height:100%;
+  margin-bottom: 30px;
+}
+
+.ptype:hover{
+  cursor: pointer;
+  background-color: var(--mp-darkblue);
+  color:#ffffff;
+}
+
+.ptype-header{
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+.ptype-header h4{
+  font-family: "Visby CF Extra";
+  font-size: 1.875rem;
+  line-height: normal;
+}
+
+.ptype-icon{
+  margin-right:24px;
+  width: 70px;
+  height: 70px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.ptype-icon svg path, .ptype-icon svg polygon{
+  fill: var(--mp-black) !important;
+  transition: all 0.1s linear;
+}
+
+.ptype:hover .ptype-icon{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.ptype:hover .ptype-icon svg path,.ptype:hover .ptype-icon svg polygon{
+  fill: var(--mp-white) !important;
+}
+
+ul.tick-items{
+  list-style-type: none;
+  padding:100px 0;
+}
+ul.tick-items li{
+  margin-bottom: 20px;
+}
+ul.tick-items li:last-child{
+  margin-bottom:0;
+}
+ul.tick-items li{
+  font-size: 1.5rem;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  background-color:rgba(236,240,247,0.3);
+
+  padding:35px;
+  width:100%;
+  border-radius: 10px;
+}
+ul.tick-items li span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, #4CB8C4 0%, #3CD3AD 100%);
+  border-radius: 50%;
+  margin-right:20px;
+}
+
+ul.tick-items li span svg{
+  width: 44px;
+}
+
+ul.tick-items li span{
+  font-size: 1.875rem;
+  line-height: normal;
+}
+
+ul.small-tick-items{
+  list-style-type: none;
+  margin-top: 90px;
+}
+
+ul.small-tick-items li{
+  color:var(--mp-white);
+  display: flex;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-bottom: 20px;
+}
+
+ul.small-tick-items li span{
+  margin-right:12px;
+}
+
+
+
+.no-location p{
+  font-size: 1rem;
+  margin-top: 30px;
+  text-align: center;
+  color:#cccccc;
+}
+
+.dark-bg p a{
+  color:var(--mp-blue);
+  font-weight: bold;
+}
+
+.dark-bg p a:hover{
+  color:var(--mp-blue);
+  font-weight: bold;
+}
+
+.rate-container{
+  margin-bottom:50px;
+  text-align: center;
+}
+
+.rate-container h4{
+  text-align: center;
+  color:var(--mp-white);
+
+}
+
+.pricing-result{
+  padding:15px 50px;
+  font-size: 2.5rem;
+  color:var(--mp-white);
+  font-weight: 500;
+  border-radius: 58px;
+  background-color:rgba(255,255,255,0.12);
+  text-align: center;
+  height: 65px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 650px;
+  width: 100%;
+  margin:0 auto;
+
+}
+
+.price-terms{
+  color:#ffffff;
+  margin-bottom: 50px;
+}
+
+.price-note{
+  text-align: center;
+}
+
+/***MOBILE MENU***/
+.mobile-menu-wrapper .menu-overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: #000000;
+  transition: all 0.1s linear;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.mobile-menu{
+  position: fixed;
+  top:0;
+  left:0;
+  transition: all 0.2s linear;
+  transform: translateX(calc(-100% - 10px));
+  background-color:var(--mp-white);
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 18%);
+  height:100%;
+  width:90%;
+  max-width: 400px;
+  overflow: auto;
+  z-index: 100;
+}
+
+.menu-close{
+    position:absolute;
+    right:15px;
+    top:15px;
+    color:var(--mp-black);
+    transition: all 0.2s linear;
+    width: 21px;
+    height: 21px;
+}
+.menu-close .mc-left{
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 9px;
+    height: 21px;
+    transition: all 400ms ease;
+}
+.menu-close:hover .mc-right{
+    right: 9px;
+}
+.menu-close .mc-left::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background:var(--mp-black);
+    transform: rotate(45deg);
+    transform-origin: center left;
+    top: 0;
+    left: 0;
+}
+.menu-close .mc-left::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background:var(--mp-black);
+    transform: rotate(-45deg);
+    transform-origin: center left;
+    bottom: 0;
+    left: 0;
+}
+.menu-close .mc-right{
+    position: absolute;
+    right: 1px;
+    top: 0;
+    width: 9px;
+    height: 21px;
+    transition: all 200ms ease;
+}
+
+.menu-close:hover .mc-left{
+    opacity: 0;
+}
+
+.menu-close .mc-right::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background:var(--mp-black);
+    transform: rotate(-45deg);
+    transform-origin: center right;
+    top: 0;
+    right: 0;
+}
+.menu-close .mc-right::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background:var(--mp-black);
+    transform: rotate(45deg);
+    transform-origin: center right;
+    bottom: 0;
+    right: 0;
+}
+.menu-close:hover{cursor: pointer;}
+
+.mobile-menu-wrapper.open .mobile-menu{
+  transform: translateX(0);
+}
+.mobile-menu-wrapper.open .menu-overlay{
+  visibility: visible;
+  opacity: 0.7;
+}
+.mobile-logo{
+  width:130px;
+  text-align: center;
+  padding:15px 15px;
+}
+
+.m-menu ul.sub-menu .menu-toggle{
+  display: none;
+}
+
+.m-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.m-menu a{
+  color:var(--mp-black);
+  font-weight: bold;
+  text-decoration: none;
+}
+.m-menu > ul > li{
+  display: block;
+}
+
+.m-menu > ul > li > a{
+  font-size:1.125rem;
+  padding:0 15px;
+  display: inline-block;
+  border-top:1px solid #d7d7d7;
+  width: 100%;
+  height:55px;
+  display: flex;
+  align-items: center;
+}
+
+.m-menu ul.sub-menu li a{
+  font-size:1rem;
+  font-weight: 500;
+  display:block;
+  padding:7px 50px 7px 30px;
+  white-space: nowrap;
+}
+
+.m-menu > ul > li > ul.sub-menu {
+  border-top:1px solid #d7d7d7;
+  padding:15px 0;
+}
+
+.m-menu ul.sub-menu li.menu-item-has-children > a{
+  font-weight: bold;
+  font-size:1.125rem;
+  line-height: 1.5rem;
+  font-family: 'Visby CF Extra';
+}
+
+.m-menu > ul > li:first-child > a{
+  border-top:1px solid #d7d7d7;
+}
+
+.m-menu > ul.sub-menu > li > a{
+  padding:15px;
+}
+
+.m-menu ul.sub-menu li.menu-item-has-children ul.sub-menu{
+  margin-bottom: 15px;
+}
+
+.m-menu ul.sub-menu li.menu-item-has-children:last-child ul.sub-menu{
+  margin-bottom: 0;
+}
+
+
+
+.m-menu > ul > li.menu-item-has-children{
+  position: relative;
+  height:55px;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+.m-menu > ul > li > .menu-toggle{
+  height: 100%;
+  border-left:1px solid #d7d7d7;
+  width:55px;
+  position: absolute;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  font-weight: 600;
+  font-size: 28px;
+  height:55px;
+}
+
+.right-info{
+  display: flex;
+  align-items: center;
+}
+
+.menu-selector{
+		direction: rtl;
+    display: none;
+    margin-left:10px;
+}
+.menu-selector span{
+	width:28px;
+	height:2px;
+	background-color: var(--mp-black);
+	margin:6px 0;
+	display:block;
+	transition: all 0.2s linear;
+
+}
+
+.menu-selector span:nth-child(2){
+	width:24px;
+}
+
+.menu-selector span:nth-child(3){
+	width:20px;
+}
+
+.menu-selector:hover{
+	cursor: pointer;
+}
+.menu-selector:hover span{
+	width:28px;
+}
+
+/***MOBILE MENU***/
+
+
+#search{
+  height:100vh;
+  background-color:var(--mp-darkblue);
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  transform: translateY(-100%);
+  transition: all 0.2s ease;
+  z-index: 999;
+  opacity: 0;
+}
+
+.search-content{
+  margin-top:30%;
+}
+
+.search-content h2{
+  color:var(--mp-white);
+  font-family: "Arial";
+  font-size: 5rem;
+}
+
+#search-close {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+#search-close:after,
+#search-close:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  border-radius: 40px;
+  top: 50%;
+}
+
+#search-close:after {
+  transform: rotate(45deg);
+  right: 0;
+}
+
+#search-close:before {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+#search-close:hover{
+  cursor: pointer;
+}
+
+#search-close:hover:after{
+  right:-33%;
+}
+
+#search-close:hover:before{
+  left:-33%;
+}
+
+#search.open{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.search-form.mp-form input:not([type='submit']){
+  padding:20px 25px;
+  border-radius: 30px;
+}
+
+#search .mp-form input[type='submit']{
+  width:160px;
+  margin-top: 10px;
+}
+.error-page h2{
+  font-size:8rem;
+  line-height: 5.625rem;
+  font-family: 'Arial';
+  font-weight:700;
+}
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+.s-arrows.left-arrow-services, .s-arrows.left-arrow-careers{
+  top: auto;
+  bottom: -25px;
+  right: 80px;
+  z-index: 3;
+  background: #000000;
+  color:#FFFFFF;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  line-height: 10px;
+}
+.s-arrows.left-arrow-services:hover,.s-arrows.right-arrow-services:hover,.s-arrows.left-arrow-careers:hover,.s-arrows.right-arrow-careers:hover{
+  background: var(--mp-blue);
+}
+.s-arrows.right-arrow-services, .s-arrows.right-arrow-careers{
+  top:auto;
+  bottom:-25px;
+  right: 0;
+  z-index:3;
+  background: #000000;
+  color:#FFFFFF;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  line-height: 10px;
+}
+.ecommerce-plugin-icon{
+  display: none;
+}
+@media only screen and (max-width:1280px) {
+  
+}
+
+@media only screen and (max-width:1199px) {
+
+}
+
+@media only screen and (max-width:1140px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:992px) {
+  html{
+    font-size: 0.9rem;
+  }
+  h1{
+    margin-bottom:1.5rem;
+  }
+  h2{
+    margin-bottom:1.5rem;
+  }
+
+  h3{
+    margin-bottom:1.5rem;
+  }
+  header{
+    padding-top:0;
+    height: 75px;
+    display: flex;
+  }
+  body{
+    padding-top:75px;
+  }
+
+  section.section {
+    margin: 20px 0;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .logo{
+    margin-top:0;
+  }
+  nav.menu{
+    display: none;
+  }
+
+  .right-links{
+    display: none;
+  }
+  .menu-selector{
+    display: inline-block;
+  }
+
+  .banner-image{
+    animation-play-state: paused;
+    animation:initial;
+  }
+  .footer-links > ul{
+    display: block;
+  }
+
+  .footer-links > ul > li{
+    margin-bottom:30px;
+  }
+
+  .integration-plugins{
+    display: block;
+    text-align: center;
+  }
+
+  .iplugin{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-content h1{
+    font-size: 2.5rem;
+    font-family: "Visby CF Extra";
+    line-height:3rem;
+  }
+  .number{
+    margin-bottom:50px;
+  }
+  .num{
+    margin-bottom:15px;
+  }
+
+  .num span {
+    font-size: 3.875rem;
+    line-height: 3.875rem;
+  }
+
+  .section-image{
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    margin-bottom: 50px;
+    background-attachment: scroll;
+  }
+
+  .section.with-numbers .feature-two-media{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:50px;
+  }
+
+  .feature-image{
+    width:50%;
+    margin-bottom:50px !important;
+  }
+
+  .breadcrumbs a{
+    letter-spacing: 1px;
+  }
+
+  .section-content h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .section-content h2 span{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .section.with-numbers .feature-image{
+    margin-bottom:0;
+  }
+  ul.tick-items li{
+    font-size: 1.5rem;
+  }
+  .item-icon{
+    width: 200px;
+    height: 200px;
+  }
+  .item-icon img{
+    width:100px;
+  }
+  .ptype{
+    height: auto;
+  }
+
+  .rewards-section h3{
+    text-align: center;
+  }
+
+  .reward{
+    margin-bottom: 50px;
+  }
+
+  .logo img{
+    height: 50px;
+  }
+
+  .faq-section .accordion-button{
+    font-size:1.25rem;
+    line-height: 2rem;
+  }
+
+  h2.section-subtitle{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .feature{
+    display: block;
+  }
+
+  .sticky-wrapper{
+    position: static;
+    top:auto;
+    transform: unset;
+  }
+
+  .scrollers{
+    display: none;
+  }
+
+  .feature-section{
+    display: block;
+    width: 100%;
+    padding-right:15px;
+    margin-bottom:30px;
+  }
+
+  .feature-media{
+    width: 100%;
+    display: block;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .feature-media img{
+    margin-bottom: 50px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .feature-two-section, .feature-two-number, .feature-two-media{
+    display: block;
+  }
+    
+  .feature-two-section{
+    /* margin-bottom: 100px; */
+    margin-top: 50px;
+  }
+
+  .fixed-footer{
+    position: static;
+  }
+
+  #wrapper{
+    margin-bottom: 0 !important;
+  }
+
+  body.why-montypay section.feature{
+    height: auto;
+  }
+  .bg-border-radius{
+    border-top-right-radius: 120px;
+  }
+  .mp-career-image{
+    display: none;
+  }
+  .mp-partners-image{
+    display: none;
+  }
+  .error-page h2{
+    font-size:8rem;
+    line-height: 5.625rem;
+    font-family: 'Arial';
+    font-weight:700;
+  }
+  .newsletter-input-content{
+    margin:15px 40px 10px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .search-content h2{
+    font-size: 2.5rem;
+    text-align:center;
+  }
+
+  .mp-form.search-form{
+    text-align: center;
+    margin-top:0;
+  }
+
+  .search-form.mp-form input:not([type='submit']){
+    text-align: center;
+  }
+
+  #search-close{
+    right:30px;
+  }
+  
+}
+@media only screen and (min-width:768px) {
+  section.section.feature:nth-child(odd){
+    margin-top:0;
+  }
+  section.section.feature:not(:nth-child(1)):nth-child(odd){
+    margin-top:0;
+  }
+}
+@media only screen and (max-width:576px) {
+  #wrapper{ 
+    overflow-x: hidden;
+  }
+  .feature-image{
+    width:80%;
+    margin: 0 auto;
+  }
+  .section-content h2 br{
+    display: none;
+  }
+  .feature-section{
+    padding-left:25px !important;
+    margin-top: 40px;
+  }
+  .post-content h2,.post-content h1{
+    font-size:2rem;
+    line-height:2.5rem;
+  }
+  .service-description h3{
+    font-size:2rem;
+    line-height:2.5rem;
+    font-family: "Visby CF Extra";
+  }
+  .banner{
+    height:calc(70vh - 75px);
+  }
+  .background-video{
+    height: calc(70vh - 75px);
+  }
+  .feature-number{
+    position: absolute;
+    right:0;
+  }
+  .s-arrows.left-arrow-services{
+    top:-20px;
+    right:15%;
+    z-index:3;
+    color:#e5e5e5;
+  }
+  .s-arrows.right-arrow-services{
+    top:-20px;
+    right: 5%;
+    z-index:3;
+    color:#e5e5e5;
+  }
+  .api-item{
+    padding:25px;
+    margin-bottom: 30px;
+  }
+  section.section.feature:nth-child(1):nth-child(odd){
+    margin-top:30px;
+  }
+  .ptypes{
+    margin:70px 0 30px 0 ;
+  }
+  .ptype{
+    padding:20px;
+  }
+  section.section.with-bg{
+    padding:70px 0;
+  }
+  section.section.with-bg-small{
+    padding:70px 0 10px 0;
+  }
+  .rewards{
+    margin:20px 0;
+  }
+  .rewards-section{
+    margin:20px 0;
+  }
+  
+  .mp-form .submit-wrapper{
+    display: flex;
+  }
+  .mp-form input[type='submit']{
+    width: 100%;
+  }
+  .faq-section .accordion-button{
+    padding:20px 0;
+    /* font-size: 1.375rem; */
+  }
+  .mp-form .submit-wrapper{
+    padding-top:0px;
+  }
+  .feature h5{
+    font-size: 4rem;
+    line-height: 4.25rem;
+    margin:30px 0 0 0;
+  }
+  section.section.no-margin:not(:nth-child(1)){
+    margin-top:0px;
+    padding-top:40px;
+  }
+  img.image-small{
+    max-width: 80%;
+  }
+  
+  ul.tick-items{
+    list-style-type: none;
+    padding:40px 0;
+  }
+  .hover-overlay{
+    display: none;
+  }
+  .ecommerce-plugin-icon{
+    display: block;
+    color: var(--mp-blue);
+    position:absolute;
+    bottom:10px;
+    right: 20px;
+  }
+  a.mp-link{
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  a.read-more.why-montypay{
+    position: relative;
+    top:unset;
+  }
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+@media only screen and (max-width:380px) {
+
+}
+
+
+@media only screen and (max-width:320px) {
+
+}
+
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+
+.testparent {
+	scroll-snap-type: x mandatory;
+}
+
+.testchild {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.announcement{
+  position:fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40%;
+  z-index:3;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  transition: transform 0.5s ease-in-out;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.35));
+}
+
+.announcement.hide{
+  transform:translateX(calc(-100% - 20px));
+  filter: none;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .announcement{
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+  }
+  .announcement.hide{
+    transform:translateX(-106%);
+  }
+}
+
+.grecaptcha-badge { visibility: hidden; }
