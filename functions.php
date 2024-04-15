@@ -10,6 +10,21 @@
 	Theme Support
 \*------------------------------------*/
 
+
+// Add custom rewrite rule
+function custom_rewrite_rule()
+{
+  add_rewrite_rule('^intl/?', 'index.php?pagename=prechecklist-intl', 'top');
+  add_rewrite_rule('^bahrain/?', 'index.php?pagename=prechecklist-bahrain', 'top');
+  add_rewrite_rule('^crypto/?', 'index.php?pagename=prechecklist-crypto', 'top');
+  add_rewrite_rule('^jordan/?', 'index.php?pagename=prechecklist-jordan', 'top');
+  add_rewrite_rule('^lebanon/?', 'index.php?pagename=prechecklist-lebanon', 'top');
+  add_rewrite_rule('^nigeria/?', 'index.php?pagename=prechecklist-nigeria', 'top');
+  add_rewrite_rule('^payabl/?', 'index.php?pagename=prechecklist-payabl', 'top');
+}
+add_action('init', 'custom_rewrite_rule');
+
+
 add_action('wp_footer', 'mycustom_wp_footer');
 
 function mycustom_wp_footer()
